@@ -21,7 +21,7 @@ function formatTime(date){
 	let ampm = hours >= 12 ? 'pm':'am'
 	hours = hours % 12 || 12
 	let min = ('00'+date.getMinutes()).slice(-2)
-	return `${mon} ${day}  ${hours}:${min}${ampm}`
+	return `${mon} ${day} ${hours}:${min}${ampm}`
 }
 
 var params = {
