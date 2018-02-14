@@ -64,7 +64,7 @@ async function main(){
 }
 
 // Only run while I am awake
-var nowHour = moment().hour()
+var nowHour = moment().tz('America/Boise').hour()
 if(nowHour > 7 && nowHour < 22){
 	main()
 }
